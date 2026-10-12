@@ -1,0 +1,9 @@
+
+-- Créer un projet Laravel
+composer create-project laravel/laravel NomDuProjet
+
+-- Rentrer dans le dossier du projet
+cd NomDuProjet
+
+php artisan --version
+php artisan serve 
