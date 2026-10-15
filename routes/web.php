@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Pokemon;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,7 +18,8 @@ Route::get('/bonjour/{prenom}/{humeur?}', function (string $prenom, ?string $hum
 
 
 Route::get('/pokemons', function() {
-    $pokemons = ['Salamèche', 'Lippoutou', 'Togepi', 'Magmar'];
+
+    $pokemons = Pokemon::all();
 
     return view('pokemons', [
         'pokemons' => $pokemons

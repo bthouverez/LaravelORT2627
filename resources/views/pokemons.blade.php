@@ -10,7 +10,7 @@
 	<ul>
 		@foreach($pokemons as $pokemon)
 
-			<li>Voici un pokemon {{ $pokemon }}</li>
+			<li>Voici un pokemon {{ $pokemon->name }} niveau {{ $pokemon->level }} </li>
 
 		@endforeach
 	</ul>
